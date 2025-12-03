@@ -9,7 +9,9 @@ const STATUS_NUMBER_MAP = {
 	'75% design': 3,
 	'100% design': 4,
 	'Under construction': 5,
-	'Complete': 6
+	'Complete': 6,
+	'Partially undone': 5,
+	'Undone': 0
 };
 
 /**
