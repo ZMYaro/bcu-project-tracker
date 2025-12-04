@@ -21,14 +21,17 @@ const STATUS_NUMBER_MAP = {
 export function renderProjects(projects) {
 	const currentProjectsHTML = projects
 			.filter((project) => STATUS_NUMBER_MAP[project.status] >= 0 && STATUS_NUMBER_MAP[project.status] < STATUS_NUMBER_MAP['Complete'])
+			.sort((a, b) => a.title < b.title ? -1 : 1)
 			.map(generateProjectHTML)
 			.join(''),
 		completedProjectsHTML = projects
 			.filter((project) => STATUS_NUMBER_MAP[project.status] === STATUS_NUMBER_MAP['Complete'])
+			.sort((a, b) => a.title < b.title ? -1 : 1)
 			.map(generateProjectHTML)
 			.join(''),
 		futureProjectsHTML = projects
 			.filter((project) => STATUS_NUMBER_MAP[project.status] < 0)
+			.sort((a, b) => a.title < b.title ? -1 : 1)
 			.map(generateProjectHTML)
 			.join('');
 	
