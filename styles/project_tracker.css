@@ -15,7 +15,7 @@
 	}
 	
 	summary::after {
-		content: '⮟';
+		content: '⌵';
 		font-size: smaller;
 		text-align: center;
 		cursor: pointer;
