@@ -54,17 +54,42 @@ export function renderProjects(projects) {
  * @returns {String}
  */
 function generateProjectHTML(project) {
+	let iconURL;
+	if (STATUS_NUMBER_MAP[project.status] >= 0 && STATUS_NUMBER_MAP[project.status] <= 1) {
+		iconURL = 'blueprint_pencil.svg';
+	} else if (STATUS_NUMBER_MAP[project.status] >= 2 && STATUS_NUMBER_MAP[project.status] <= 4) {
+		iconURL = 'pencil.svg';
+	} else if (STATUS_NUMBER_MAP[project.status] === 5) {
+		iconURL = 'roller.svg';
+	}
+
 	// TODO: Sanitize text from spreadsheet
 	return `<details>
 		<summary>
 			<h3>${project.title}${project.section ? ` &ndash; ${project.section}` : ''}</h3>
-			${project.website && project.website !== 'N/A' ? `<a href="${project.website}" target="_blank">🌐</a>`: ''}
-			<progress
-				max="${STATUS_NUMBER_MAP['Complete']}"
-				value="${STATUS_NUMBER_MAP[project.status]}"
-				${['Partially undone', 'Undone'].includes(project.status) ? 'class="bad"' : ''}
-				${['Under construction', 'Complete'].includes(project.status) ? 'class="good"' : ''}></progress>
-			<small class="project-status-text">${project.status}</small>
+			<div class="project-actions">
+				${project.website && project.website !== 'N/A' ? `<a href="${project.website}" target="_blank">🌐</a>`: ''}
+				<div class="project-expand-button" aria-hidden="true" tabindex="-1">⮟</div>
+			</div>
+			<div class="progress-wrapper">
+				${iconURL ?
+					`<img
+						src="images/${iconURL}"
+						alt=""
+						class="status-graphic"
+						style="left: ${Math.round(STATUS_NUMBER_MAP[project.status] / STATUS_NUMBER_MAP['Complete'] * 100)}%" />` :
+					''
+				}
+				<progress
+					max="${STATUS_NUMBER_MAP['Complete']}"
+					value="${STATUS_NUMBER_MAP[project.status]}"
+					${['Partially undone', 'Undone'].includes(project.status) ? 'class="bad"' : ''}
+					${['Under construction', 'Complete'].includes(project.status) ? 'class="good"' : ''}></progress>
+			</div>
+			<small class="project-status-text">
+				<span>${project.status}</span>
+				<span>${(project.completionDate || '').replace('Unannounced', '').replace('N/A', '').replace('?', '')}</span>
+			</small>
 		</summary>
 		<dl>
 			<dt>City/Boston Neighborhood</dt>
