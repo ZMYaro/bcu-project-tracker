@@ -36,16 +36,9 @@ header {
 		background-image: url('../images/header_street_old.svg');
 	}
 	:nth-child(2) {
-		background-image:
-			url('../images/header_street_blueprint_overlay.svg'),
-			url('../images/header_street_old.svg');
+		background-image: url('../images/header_street_quick_build.svg');
 	}
 	:nth-child(3) {
-		background-image:
-			url('../images/header_street_blueprint_overlay.svg'),
-			url('../images/header_street_new.svg');
-	}
-	:nth-child(4) {
 		background-image: url('../images/header_street_new.svg');
 	}
 }

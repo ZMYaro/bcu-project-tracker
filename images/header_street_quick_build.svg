@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="qb" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 96 768">
+  <!-- Generator: Adobe Illustrator 29.8.4, SVG Export Plug-In . SVG Version: 2.1.1 Build 6)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        stroke: #fdcb59;
+      }
+
+      .st1, .st2, .st3 {
+        stroke-miterlimit: 10;
+      }
+
+      .st1, .st3 {
+        fill: none;
+        stroke-width: 4px;
+      }
+
+      .st2 {
+        fill: #585858;
+        stroke: #585858;
+      }
+
+      .st3 {
+        stroke: #fff;
+      }
+
+      .st4 {
+        fill: #b3b4b5;
+      }
+
+      .st5 {
+        fill: #dedad7;
+      }
+
+      .st6 {
+        fill: #efdbbf;
+      }
+
+      .st7 {
+        fill: #b3b4b4;
+      }
+
+      .st8 {
+        fill: #3c592c;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <rect id="s_grass" class="st8" y="744" width="96" height="24"/>
+  <rect id="s_sidewalk" class="st5" y="708" width="96" height="36"/>
+  <rect id="s_curb" class="st7" y="702" width="96" height="6"/>
+  <rect id="s_sidewalk_ext_pavement" class="st2" y="650" width="96" height="52"/>
+  <rect id="s_sidewalk_ext" class="st6" y="650" width="96" height="48"/>
+  <rect id="s_sidewalk_ext_divider_n" class="st0" y="646" width="96" height="4"/>
+  <rect id="s_micro_lane" class="st2" y="574" width="96" height="72"/>
+  <rect id="s_micro_lane_divider_s" class="st0" y="570" width="96" height="4"/>
+  <rect id="s_buffer" class="st2" y="534" width="96" height="36"/>
+  <line class="st3" x1="28" y1="572.75" x2="68" y2="532.75"/>
+  <rect id="s_lane_divider" class="st0" y="530" width="96" height="4"/>
+  <rect id="s_micro_lane_divider" class="st0" y="530" width="96" height="4"/>
+  <rect id="s_lane" class="st2" y="410" width="96" height="120"/>
+  <rect id="s_center_line_pavement" class="st2" y="402" width="96" height="8"/>
+  <line id="s_center_line" class="st1" y1="408" x2="96" y2="408"/>
+  <g id="median">
+    <rect class="st5" y="366" width="96" height="36"/>
+  </g>
+  <rect id="n_center_line_pavement" class="st2" y="358" width="96" height="8"/>
+  <line id="n_center_line" class="st1" y1="360" x2="96" y2="360"/>
+  <rect id="n_lane" class="st2" y="238" width="96" height="120"/>
+  <rect id="n_lane_divider" class="st0" y="234" width="96" height="4"/>
+  <rect id="n_buffer" class="st2" y="198" width="96" height="36"/>
+  <rect id="n_micro_lane_divider" class="st0" y="194" width="96" height="4"/>
+  <line class="st3" x1="24" y1="236" x2="64" y2="196"/>
+  <rect id="n_micro_lane" class="st2" y="122" width="96" height="72"/>
+  <rect id="n_sidewalk_ext_divider" class="st0" y="118" width="96" height="4"/>
+  <rect id="n_sidewalk_ext_pavement" class="st2" y="66" width="96" height="52"/>
+  <rect id="n_sidewalk_ext" class="st6" y="70" width="96" height="48"/>
+  <rect id="n_curb" class="st4" y="60" width="96" height="6"/>
+  <rect id="n_sidewalk" class="st5" y="24" width="96" height="36"/>
+  <rect id="n_grass" class="st8" width="96" height="24"/>
+</svg>
