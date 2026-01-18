@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="old" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 96 768">
+  <!-- Generator: Adobe Illustrator 29.8.4, SVG Export Plug-In . SVG Version: 2.1.1 Build 6)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #585858;
+      }
+
+      .st2 {
+        stroke: #fdcb59;
+      }
+
+      .st2, .st3 {
+        fill: none;
+        stroke-width: 4px;
+      }
+
+      .st2, .st3, .st1 {
+        stroke-miterlimit: 10;
+      }
+
+      .st3 {
+        stroke: #fff;
+        stroke-dasharray: 48;
+      }
+
+      .st1 {
+        stroke: #585858;
+      }
+
+      .st4 {
+        fill: #b3b4b5;
+      }
+
+      .st5 {
+        fill: #dedad7;
+      }
+
+      .st6 {
+        fill: #b3b4b4;
+      }
+
+      .st7 {
+        fill: #3c592c;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <rect id="s_grass" class="st7" y="744" width="96" height="24"/>
+  <rect id="s_sidewalk" class="st5" y="708" width="96" height="36"/>
+  <rect id="s_curb" class="st6" y="702" width="96" height="6"/>
+  <rect id="s_r_lane" class="st1" y="558" width="96" height="144"/>
+  <rect id="s_lane_divider_pavement" class="st0" y="554" width="96" height="4"/>
+  <line id="s_lane_divider" class="st3" y1="556" x2="96" y2="556"/>
+  <rect id="s_l_lane" class="st1" y="410" width="96" height="144"/>
+  <rect id="s_center_line_pavement" class="st1" y="402" width="96" height="8"/>
+  <line id="s_center_line" class="st2" y1="408" x2="96" y2="408"/>
+  <g id="median">
+    <rect class="st5" y="366" width="96" height="36"/>
+  </g>
+  <rect id="n_center_line_pavement" class="st1" y="358" width="96" height="8"/>
+  <line id="n_center_line" class="st2" y1="360" x2="96" y2="360"/>
+  <rect id="n_l_lane" class="st1" y="214" width="96" height="144"/>
+  <rect id="n_lane_divider_pavement" class="st0" y="210" width="96" height="4"/>
+  <line id="n_lane_divider" class="st3" y1="212" x2="96" y2="212"/>
+  <rect id="n_r_lane" class="st1" y="66" width="96" height="144"/>
+  <rect id="n_curb" class="st4" y="60" width="96" height="6"/>
+  <rect id="n_sidewalk" class="st5" y="24" width="96" height="36"/>
+  <rect id="n_grass" class="st7" width="96" height="24"/>
+</svg>
