@@ -68,7 +68,7 @@ function generateProjectHTML(project) {
 		<summary>
 			<h3>${project.title}${project.section ? ` &ndash; ${project.section}` : ''}</h3>
 			<div class="project-actions">
-				${project.website && project.website !== 'N/A' ? `<a href="${project.website}" target="_blank">🌐</a>`: ''}
+				${project.website && project.website !== 'N/A' ? `<a href="${project.website}" target="_blank">🔗</a>`: ''}
 				<div class="project-expand-button" aria-hidden="true" tabindex="-1">⮟</div>
 			</div>
 			<div class="progress-wrapper">
