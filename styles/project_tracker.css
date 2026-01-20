@@ -26,20 +26,21 @@ header {
 	margin: calc(-1 * var(--header-padding));
 	margin-block-start: 0;
 	display: flex;
-	height: 128px;
+	--header-image-height: 128px;
+	--base-header-image-height: 768px;
+	height: var(--header-image-height);
 	
-	div {
+	.header-image-flex,
+	.header-image-fixed {
+		background-size: auto var(--header-image-height);
+	}
+	.header-image-flex {
 		flex-grow: 1;
 		background-repeat: repeat;
 	}
-	:nth-child(1) {
-		background-image: url('../images/header_street_old.svg');
-	}
-	:nth-child(2) {
-		background-image: url('../images/header_street_quick_build.svg');
-	}
-	:nth-child(3) {
-		background-image: url('../images/header_street_new.svg');
+	.header-image-fixed {
+		flex-shrink: 0;
+		width: calc(var(--header-image-height) / var(--base-header-image-height) * var(--base-header-image-width));
 	}
 }
 

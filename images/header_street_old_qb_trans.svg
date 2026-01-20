@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 768">
+  <!-- Generator: Adobe Illustrator 29.8.4, SVG Export Plug-In . SVG Version: 2.1.1 Build 6)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #585858;
+      }
+
+      .st1 {
+        fill: #c04926;
+      }
+
+      .st2 {
+        fill: #31302c;
+      }
+
+      .st3 {
+        stroke-dasharray: 24;
+      }
+
+      .st3, .st4, .st5, .st6, .st7, .st8, .st9 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .st3, .st4, .st6, .st7, .st8, .st9 {
+        stroke: #fff;
+      }
+
+      .st4 {
+        stroke-dasharray: 21.89 21.89;
+      }
+
+      .st5 {
+        stroke: #fdcb59;
+      }
+
+      .st6, .st9 {
+        stroke-dasharray: 48;
+      }
+
+      .st10 {
+        fill: #b3b4b5;
+      }
+
+      .st8 {
+        stroke-dasharray: 20.03 20.03;
+      }
+
+      .st11 {
+        fill: #dedad7;
+      }
+
+      .st12 {
+        fill: #efdbbf;
+      }
+
+      .st13 {
+        fill: #b3b4b4;
+      }
+
+      .st9 {
+        display: none;
+      }
+
+      .st14 {
+        fill: #3c592c;
+        isolation: isolate;
+      }
+
+      .st15 {
+        fill: #ec6b0b;
+      }
+
+      .st16 {
+        fill: #44d62c;
+      }
+    </style>
+  </defs>
+  <rect id="s_grass" class="st14" y="744" width="300" height="24"/>
+  <rect id="s_sidewalk" class="st11" y="708" width="300" height="36"/>
+  <rect id="s_curb" class="st13" y="702" width="300" height="6"/>
+  <rect id="s_r_lane" class="st0" y="558" width="300" height="144"/>
+  <polygon id="s_sidewalk_ext" class="st12" points="131 626 300 626 300 698 15.11 698 131 626"/>
+  <polygon id="s_micro_lane" class="st16" points="238 562 300 562 300 622 137 622 238 562"/>
+  <rect id="s_lane_divider_pavement" class="st0" y="554" width="300" height="4"/>
+  <rect id="s_l_lane" class="st0" y="410" width="300" height="144"/>
+  <polyline id="s_sidewalk_ext_divider" class="st7" points="2 700 125 624 300 624"/>
+  <g id="s_micro_lane_divider">
+    <g>
+      <line class="st7" x1="125" y1="624" x2="135.34" y2="617.91"/>
+      <line class="st8" x1="152.6" y1="607.75" x2="213.03" y2="572.17"/>
+      <line class="st7" x1="221.66" y1="567.09" x2="232" y2="561"/>
+    </g>
+  </g>
+  <line id="s_lane_divider_rev" class="st6" x1="240" y1="533" x2="1" y2="556"/>
+  <line id="s_lane_divider" class="st9" x1="1" y1="556" x2="240" y2="533"/>
+  <rect id="s_center_line_pavement" class="st0" y="402" width="300" height="8"/>
+  <line id="s_center_line" class="st5" y1="408" x2="300" y2="408"/>
+  <g id="median">
+    <rect class="st11" y="366" width="300" height="36"/>
+  </g>
+  <rect id="n_center_line_pavement" class="st0" y="358" width="300" height="8"/>
+  <line id="n_center_line" class="st5" y1="360" x2="300" y2="360"/>
+  <rect id="n_l_lane" class="st0" y="214" width="300" height="144"/>
+  <rect id="n_lane_divider_pavement" class="st0" y="210" width="300" height="4"/>
+  <line id="n_lane_divider_rev" class="st6" x1="240" y1="236" x2="1" y2="212"/>
+  <line id="n_lane_divider" class="st9" x1="1" y1="212" x2="240" y2="236"/>
+  <rect id="n_r_lane" class="st0" y="66" width="300" height="144"/>
+  <polygon id="n_micro_lane" class="st16" points="127 136 240 146 300 146 300 206 239 206 127 136"/>
+  <polygon id="n_sidewalk_ext" class="st12" points="13 70 300 70 300 142 240 142 126 133 13 70"/>
+  <polyline id="n_sidewalk_ext_divider" class="st7" points="299.67 144 240 144 119 134 2 68"/>
+  <g id="n_micro_lane_divider">
+    <g>
+      <line class="st7" x1="232" y1="207" x2="221.84" y2="200.62"/>
+      <line class="st4" x1="203.3" y1="188.97" x2="138.43" y2="148.21"/>
+      <line class="st7" x1="129.16" y1="142.38" x2="119" y2="136"/>
+    </g>
+  </g>
+  <line id="n_micro_lane_cont_n" class="st3" x1="2" y1="187.2" x2="240" y2="211"/>
+  <line id="n_micro_lane_cont_s" class="st3" x1="2" y1="122.2" x2="120" y2="134"/>
+  <rect id="n_curb" class="st10" y="60" width="300" height="6"/>
+  <rect id="n_sidewalk" class="st11" y="24" width="300" height="36"/>
+  <rect id="n_grass" class="st14" width="300" height="24"/>
+  <line id="s_buffer_line" class="st7" x1="260" y1="532" x2="300" y2="532"/>
+  <line id="s_lane_divider_s" class="st7" x1="236" y1="560" x2="300" y2="560"/>
+  <line id="s_buffer_line1" data-name="s_buffer_line" class="st7" x1="260" y1="236" x2="300" y2="236"/>
+  <line id="s_lane_divider_s1" data-name="s_lane_divider_s" class="st7" x1="236" y1="208" x2="300" y2="208"/>
+  <g id="channelizer">
+    <circle class="st2" cx="228.3" cy="547" r="9"/>
+    <circle class="st15" cx="228.3" cy="547" r="3.75"/>
+    <circle class="st1" cx="228.3" cy="547" r="2"/>
+  </g>
+  <g id="barrel">
+    <circle class="st2" cx="132.06" cy="642.5" r="15.5"/>
+    <circle class="st15" cx="132.06" cy="642.5" r="11.75"/>
+    <circle class="st1" cx="132.06" cy="642.5" r="9"/>
+  </g>
+  <g id="barrel1" data-name="barrel">
+    <circle class="st2" cx="74" cy="669.5" r="15.5"/>
+    <circle class="st15" cx="74" cy="669.5" r="11.75"/>
+    <circle class="st1" cx="74" cy="669.5" r="9"/>
+  </g>
+  <g id="channelizer1" data-name="channelizer">
+    <circle class="st2" cx="229.6" cy="221" r="9"/>
+    <circle class="st15" cx="229.6" cy="221" r="3.75"/>
+    <circle class="st1" cx="229.6" cy="221" r="2"/>
+  </g>
+  <g id="barrel2" data-name="barrel">
+    <circle class="st2" cx="128" cy="115" r="15.5"/>
+    <circle class="st15" cx="128" cy="115" r="11.75"/>
+    <circle class="st1" cx="128" cy="115" r="9"/>
+  </g>
+  <g id="barrel3" data-name="barrel">
+    <circle class="st2" cx="78.3" cy="86.5" r="15.5"/>
+    <circle class="st15" cx="78.3" cy="86.5" r="11.75"/>
+    <circle class="st1" cx="78.3" cy="86.5" r="9"/>
+  </g>
+  <g id="barrel4" data-name="barrel">
+    <circle class="st2" cx="16" cy="686" r="15.5"/>
+    <circle class="st15" cx="16" cy="686" r="11.75"/>
+    <circle class="st1" cx="16" cy="686" r="9"/>
+  </g>
+  <g id="channelizer2" data-name="channelizer">
+    <circle class="st2" cx="290" cy="220.6" r="9"/>
+    <circle class="st15" cx="290" cy="220.6" r="3.75"/>
+    <circle class="st1" cx="290" cy="220.6" r="2"/>
+  </g>
+  <g id="channelizer3" data-name="channelizer">
+    <circle class="st2" cx="290.3" cy="544" r="9"/>
+    <circle class="st15" cx="290.3" cy="544" r="3.75"/>
+    <circle class="st1" cx="290.3" cy="544" r="2"/>
+  </g>
+</svg>
