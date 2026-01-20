@@ -85,11 +85,11 @@ function generateProjectHTML(project) {
 					value="${STATUS_NUMBER_MAP[project.status]}"
 					${['Partially undone', 'Undone'].includes(project.status) ? 'class="bad"' : ''}
 					${['Under construction', 'Complete'].includes(project.status) ? 'class="good"' : ''}></progress>
+				<small class="project-status-text">
+					<span>${project.status}</span>
+					<span>${(project.completionDate || '').replace('Unannounced', '').replace('N/A', '').replace('?', '')}</span>
+				</small>
 			</div>
-			<small class="project-status-text">
-				<span>${project.status}</span>
-				<span>${(project.completionDate || '').replace('Unannounced', '').replace('N/A', '').replace('?', '')}</span>
-			</small>
 		</summary>
 		<dl>
 			<dt>City/Boston Neighborhood</dt>

@@ -45,7 +45,6 @@ header {
 }
 
 #projects details {
-	
 	margin-block-end: 1rem;
 	
 	summary {
@@ -63,7 +62,6 @@ header {
 	
 	.project-expand-button {
 		display: inline-block;
-		font-size: smaller;
 		margin: 0;
 		padding: 0;
 		border: 0 none;
@@ -84,34 +82,50 @@ header {
 		text-decoration: none;
 	}
 	
+	/* Container for the progress bar and status graphic */
 	.progress-wrapper {
 		grid-column: 1 / -1;
+		margin: calc(0.75 * var(--button-margin)) 0 calc(0.25 * var(--button-margin));
 		
 		/* For positioning status icons */
 		position: relative;
 	}
 	
 	progress {
+		appearance: none;
 		width: 100%;
-		height: 48px;
+		height: 15px;
+		margin: 0;
+		border-radius: var(--button-corner-radius);
+		overflow: hidden;
 		
-		accent-color: var(--color-bcu-blue);
+		color: var(--color-bcu-blue);
+		accent-color: currentColor;
+		
+		&::-moz-progress-bar {
+			background-color: currentColor;
+		}
+		&::-webkit-progress-value {
+			background-color: currentColor;
+		}
 		
 		@media (prefers-color-scheme: dark) {
-			accent-color: var(--color-blue);
+			color: var(--color-blue);
 		}
 		&.good {
-			accent-color: var(--color-green);
+			color: var(--color-green);
 		}
 		&.bad {
-			accent-color: var(--color-red);
+			color: var(--color-red);
 		}
 	}
 	
+	/* Graphic on the progress bar that indicates the rough project phase (early planning, design, construction) */
 	.status-graphic {
 		position: absolute;
-		top: -20px;
-		height: 48px;
+		top: -25px;
+		top: -25.5px;
+		height: 43px;
 		transform-origin: bottom center;
 		
 		/* Don't block interactions! */
@@ -120,11 +134,13 @@ header {
 		animation-iteration-count: infinite;
 		
 		&[src$="pencil.svg"] {
+			transform: translateX(-50%) rotateZ(50deg);
 			animation-name: pencil-writing;
 			animation-duration: 2.2s;
 		}
 		&[src$="roller.svg"] {
-			
+			--icon-translate-x: -7px;
+			--icon-translate-y: 0px;
 			transform: translateX(var(--icon-translate-x)) translateY(var(--icon-translate-y));
 			animation-name: roller;
 			animation-duration: 1s;
@@ -132,13 +148,13 @@ header {
 	}
 	
 	.project-status-text {
-		display: grid;
-		grid-column: 1 / -1;
-		grid-template-columns: subgrid;
-		padding-inline: 0.25em;
+		display: flex;
+		justify-content: space-between;
+		padding: calc(0.25 * var(--button-margin));
 	}
 	
 	dl {
+		margin-block: 0.5em 1em;
 		display: inline-grid;
 		grid-template-columns: auto auto;
 		align-items: baseline;
@@ -159,35 +175,35 @@ footer {
 }
 
 @keyframes pencil-writing {
-	 95% { transform: translateX(-51%) rotateZ( 0deg); }
-	100% { transform: translateX(-51%) rotateZ(-5deg); }
-	  0% { transform: translateX(-51%) rotateZ(-5deg); }
-	  5% { transform: translateX(-51%) rotateZ( 0deg); }
+	 95% { transform: translateX(-49%) rotateZ( 0deg); }
+	100% { transform: translateX(-49%) rotateZ( 5deg); }
+	  0% { transform: translateX(-49%) rotateZ( 5deg); }
+	  5% { transform: translateX(-49%) rotateZ( 0deg); }
 	  
-	 20% { transform: translateX(-50%) rotateZ(-15deg); }
-	 25% { transform: translateX(-50%) rotateZ(-20deg); }
-	 30% { transform: translateX(-50%) rotateZ(-10deg); }
+	 20% { transform: translateX(-50%) rotateZ( 15deg); }
+	 25% { transform: translateX(-50%) rotateZ( 20deg); }
+	 30% { transform: translateX(-50%) rotateZ( 10deg); }
 	 
-	 45% { transform: translateX(-49%) rotateZ( 8deg); }
-	 50% { transform: translateX(-49%) rotateZ( 13deg); }
-	 55% { transform: translateX(-49%) rotateZ( 8deg); }
+	 45% { transform: translateX(-51%) rotateZ(-8deg); }
+	 50% { transform: translateX(-51%) rotateZ(-13deg); }
+	 55% { transform: translateX(-51%) rotateZ(-8deg); }
 	 
 	 
-	 70% { transform: translateX(-50%) rotateZ(-10deg); }
-	 75% { transform: translateX(-50%) rotateZ( -5deg); }
-	 80% { transform: translateX(-50%) rotateZ(-10deg); }
+	 70% { transform: translateX(-50%) rotateZ( 10deg); }
+	 75% { transform: translateX(-50%) rotateZ(  5deg); }
+	 80% { transform: translateX(-50%) rotateZ( 10deg); }
 }
 @keyframes roller {
-	100% { --icon-translate-x: -6px; --icon-translate-y: 1px; }
-	  0% { --icon-translate-x: -6px; --icon-translate-y: 1px; }
-	 12% {                           --icon-translate-y: 0px; }
+	100% { --icon-translate-x: -7px; --icon-translate-y: 0px; }
+	  0% { --icon-translate-x: -7px; --icon-translate-y: 0px; }
+	 12% {                           --icon-translate-y:-0.5px; }
 	 
-	 25% {                           --icon-translate-y: 1px; }
-	 37% {                           --icon-translate-y: 0px; }
+	 25% {                           --icon-translate-y: 0px; }
+	 37% {                           --icon-translate-y:-0.5px; }
 	 
-	 50% { --icon-translate-x: -8px; --icon-translate-y: 1px; }
-	 62% {                           --icon-translate-y: 0px; }
+	 50% { --icon-translate-x: -9px; --icon-translate-y: 0px; }
+	 62% {                           --icon-translate-y:-0.5px; }
 	 
-	 75% {                           --icon-translate-y: 1px; }
-	 87% {                           --icon-translate-y: 0px; }
+	 75% {                           --icon-translate-y: 0px; }
+	 87% {                           --icon-translate-y:-0.5px; }
 }
