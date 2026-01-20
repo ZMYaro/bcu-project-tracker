@@ -145,6 +145,11 @@ header {
 			animation-name: roller;
 			animation-duration: 1s;
 		}
+		@media (prefers-reduced-motion: reduce) {
+			&[src] {
+				animation-name: none;
+			}
+		}
 	}
 	
 	.project-status-text {
