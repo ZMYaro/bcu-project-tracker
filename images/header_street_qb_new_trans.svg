@@ -91,14 +91,14 @@
   <rect id="s_lane_divider" class="st4" y="530" width="96" height="4"/>
   <rect id="s_micro_lane_ramp" class="st7" x="138" y="556" width="72" height="50"/>
   <rect id="s_lane" class="st0" y="410" width="210" height="120"/>
-  <polyline id="s_micro_lane_divider" class="st6" points="210 512 105 532 0 532"/>
+  <polyline id="s_micro_lane_divider" class="st6" points="209 513 105 532 0 532"/>
   <rect id="center_line_pavement" class="st0" y="358" width="210" height="52"/>
   <rect id="median_pavement" class="st8" y="366" width="105" height="36"/>
   <polyline id="s_center_line" class="st5" points="0 408 105 408 210 388"/>
   <polyline id="n_center_line" class="st5" points="0 360 105 360 210 380"/>
   <rect id="n_lane" class="st0" y="238" width="210" height="120"/>
   <rect id="n_micro_lane_pavement" class="st0" y="141.75" width="210" height="96.25"/>
-  <polyline id="n_lane_divider" class="st6" points="210 256 105 236 0 236"/>
+  <polyline id="n_lane_divider" class="st6" points="209 255 105 236 0 236"/>
   <rect id="n_micro_lane_divider" class="st4" y="206" width="180" height="4"/>
   <rect id="n_micro_lane" class="st11" y="146" width="138" height="60"/>
   <rect id="n_micro_lane_ramp" class="st7" x="138" y="162" width="72" height="50"/>
@@ -110,9 +110,9 @@
   <rect id="n_sidewalk" class="st10" y="24" width="210" height="36"/>
   <rect id="n_grass" class="st14" width="210" height="24"/>
   <g id="barrel">
-    <circle class="st3" cx="43.39" cy="384" r="15.5"/>
-    <circle class="st15" cx="43.39" cy="384" r="11.75"/>
-    <circle class="st2" cx="43.39" cy="384" r="9"/>
+    <circle class="st3" cx="43.5" cy="384" r="15.5"/>
+    <circle class="st15" cx="43.5" cy="384" r="11.75"/>
+    <circle class="st2" cx="43.5" cy="384" r="9"/>
   </g>
   <g id="barrel2">
     <circle class="st3" cx="38.5" cy="661.5" r="15.5"/>
@@ -120,14 +120,14 @@
     <circle class="st2" cx="38.5" cy="661.5" r="9"/>
   </g>
   <g id="channelizer">
-    <circle class="st3" cx="62.25" cy="618" r="9"/>
-    <circle class="st15" cx="62.25" cy="618" r="3.75"/>
-    <circle class="st2" cx="62.25" cy="618" r="2"/>
+    <circle class="st3" cx="62.5" cy="618" r="9"/>
+    <circle class="st15" cx="62.5" cy="618" r="3.75"/>
+    <circle class="st2" cx="62.5" cy="618" r="2"/>
   </g>
   <g id="channelizer1">
-    <circle class="st3" cx="131.75" cy="616" r="9"/>
-    <circle class="st15" cx="131.75" cy="616" r="3.75"/>
-    <circle class="st2" cx="131.75" cy="616" r="2"/>
+    <circle class="st3" cx="131.5" cy="616" r="9"/>
+    <circle class="st15" cx="131.5" cy="616" r="3.75"/>
+    <circle class="st2" cx="131.5" cy="616" r="2"/>
   </g>
   <g id="channelizer2">
     <circle class="st3" cx="199" cy="616" r="9"/>
@@ -135,29 +135,29 @@
     <circle class="st2" cx="199" cy="616" r="2"/>
   </g>
   <g id="channelizer3">
-    <circle class="st3" cx="17.25" cy="546.5" r="9"/>
-    <circle class="st15" cx="17.25" cy="546.5" r="3.75"/>
-    <circle class="st2" cx="17.25" cy="546.5" r="2"/>
+    <circle class="st3" cx="17.5" cy="546.5" r="9"/>
+    <circle class="st15" cx="17.5" cy="546.5" r="3.75"/>
+    <circle class="st2" cx="17.5" cy="546.5" r="2"/>
   </g>
   <g id="channelizer4">
-    <circle class="st3" cx="87.25" cy="546.5" r="9"/>
-    <circle class="st15" cx="87.25" cy="546.5" r="3.75"/>
-    <circle class="st2" cx="87.25" cy="546.5" r="2"/>
+    <circle class="st3" cx="87.5" cy="546.5" r="9"/>
+    <circle class="st15" cx="87.5" cy="546.5" r="3.75"/>
+    <circle class="st2" cx="87.5" cy="546.5" r="2"/>
   </g>
   <g id="channelizer6">
-    <circle class="st3" cx="53.38" cy="221.25" r="9"/>
-    <circle class="st15" cx="53.38" cy="221.25" r="3.75"/>
-    <circle class="st2" cx="53.38" cy="221.25" r="2"/>
+    <circle class="st3" cx="53.5" cy="221.5" r="9"/>
+    <circle class="st15" cx="53.5" cy="221.5" r="3.75"/>
+    <circle class="st2" cx="53.5" cy="221.5" r="2"/>
   </g>
   <g id="channelizer7">
-    <circle class="st3" cx="122.25" cy="224" r="9"/>
-    <circle class="st15" cx="122.25" cy="224" r="3.75"/>
-    <circle class="st2" cx="122.25" cy="224" r="2"/>
+    <circle class="st3" cx="122.5" cy="224" r="9"/>
+    <circle class="st15" cx="122.5" cy="224" r="3.75"/>
+    <circle class="st2" cx="122.5" cy="224" r="2"/>
   </g>
   <g id="channelizer9">
-    <circle class="st3" cx="61" cy="149.75" r="9"/>
-    <circle class="st15" cx="61" cy="149.75" r="3.75"/>
-    <circle class="st2" cx="61" cy="149.75" r="2"/>
+    <circle class="st3" cx="61" cy="149.5" r="9"/>
+    <circle class="st15" cx="61" cy="149.5" r="3.75"/>
+    <circle class="st2" cx="61" cy="149.5" r="2"/>
   </g>
   <g id="channelizer10">
     <circle class="st3" cx="131" cy="153.5" r="9"/>
@@ -170,9 +170,9 @@
     <circle class="st2" cx="199" cy="152" r="2"/>
   </g>
   <g id="barrel5">
-    <circle class="st3" cx="35.25" cy="107.25" r="15.5"/>
-    <circle class="st15" cx="35.25" cy="107.25" r="11.75"/>
-    <circle class="st2" cx="35.25" cy="107.25" r="9"/>
+    <circle class="st3" cx="35" cy="107" r="15.5"/>
+    <circle class="st15" cx="35" cy="107" r="11.75"/>
+    <circle class="st2" cx="35" cy="107" r="9"/>
   </g>
   <g id="channelizer12">
     <circle class="st3" cx="127" cy="52" r="9"/>
@@ -180,9 +180,9 @@
     <circle class="st2" cx="127" cy="52" r="2"/>
   </g>
   <g id="channelizer13">
-    <circle class="st3" cx="199.12" cy="51" r="9"/>
-    <circle class="st15" cx="199.12" cy="51" r="3.75"/>
-    <circle class="st2" cx="199.12" cy="51" r="2"/>
+    <circle class="st3" cx="199" cy="51" r="9"/>
+    <circle class="st15" cx="199" cy="51" r="3.75"/>
+    <circle class="st2" cx="199" cy="51" r="2"/>
   </g>
   <g id="channelizer14">
     <circle class="st3" cx="118" cy="716.5" r="9"/>
@@ -195,18 +195,18 @@
     <circle class="st2" cx="188" cy="716.5" r="2"/>
   </g>
   <g id="channelizer16">
-    <circle class="st3" cx="51.25" cy="711.75" r="9"/>
-    <circle class="st15" cx="51.25" cy="711.75" r="3.75"/>
-    <circle class="st2" cx="51.25" cy="711.75" r="2"/>
+    <circle class="st3" cx="51.5" cy="711.5" r="9"/>
+    <circle class="st15" cx="51.5" cy="711.5" r="3.75"/>
+    <circle class="st2" cx="51.5" cy="711.5" r="2"/>
   </g>
   <g id="channelizer17">
-    <circle class="st3" cx="52" cy="62.75" r="9"/>
-    <circle class="st15" cx="52" cy="62.75" r="3.75"/>
-    <circle class="st2" cx="52" cy="62.75" r="2"/>
+    <circle class="st3" cx="52" cy="62.5" r="9"/>
+    <circle class="st15" cx="52" cy="62.5" r="3.75"/>
+    <circle class="st2" cx="52" cy="62.5" r="2"/>
   </g>
   <g id="barrel1">
-    <circle class="st3" cx="189.5" cy="229.75" r="15.5"/>
-    <circle class="st15" cx="189.5" cy="229.75" r="11.75"/>
+    <circle class="st3" cx="189.5" cy="230" r="15.5"/>
+    <circle class="st15" cx="189.5" cy="230" r="11.75"/>
     <circle class="st2" cx="189.5" cy="229.75" r="9"/>
   </g>
   <g id="barrel11" data-name="barrel1">
