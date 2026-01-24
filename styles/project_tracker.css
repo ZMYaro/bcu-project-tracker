@@ -17,11 +17,11 @@
 	color: darkred;
 }
 
+/* ======== Header ======== */
 header {
 	/* Header image grass color */
 	background-color: #3a5730;
 }
-
 .header-image {
 	margin: calc(-1 * var(--header-padding));
 	margin-block-start: 0;
@@ -44,6 +44,31 @@ header {
 	}
 }
 
+/* ======== Filters ======== */
+#filters {
+	padding-inline: var(--section-padding);
+	text-align: center;
+	text-wrap: balance;
+}
+#filters label:has(input[type="radio"]) {
+	display: inline-block;
+	margin: calc(0.25 * var(--button-margin));
+	padding: var(--button-padding);
+	border: 1px solid var(--color-button-border);
+	border-radius: var(--button-corner-radius);
+	
+	cursor: pointer;
+	
+	&:has(input[type="radio"]:checked) {
+		background-color: var(--color-button-bg);
+		color: var(--color-button);
+	}
+}
+#filters input[type="radio"] {
+	display: none;
+}
+
+/* ======== Project list ======== */
 #projects details {
 	margin-block-end: 1rem;
 	

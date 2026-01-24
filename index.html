@@ -12,7 +12,7 @@
 <body>
 	<header>
 		<h1>Boston Area Micromobility Project Tracker</h1>
-		<div class="header-image" >
+		<div class="header-image">
 			<div
 				class="header-image-flex"
 				style="background-image: url('images/header_street_old.svg');"></div>
@@ -37,13 +37,52 @@
 	
 	<output id="error-message"></output>
 	
+	<form role="toolbar" id="filters">
+		<label>
+			<input type="radio" name="location" value="" checked="checked" />
+			All
+		</label>
+		<label>
+			<input type="radio" name="location" value="Belmont" />
+			Belmont
+		</label>
+		<label>
+			<input type="radio" name="location" value="Boston" />
+			Boston
+		</label>
+		<label>
+			<input type="radio" name="location" value="Brookline" />
+			Brookline
+		</label>
+		<label>
+			<input type="radio" name="location" value="Cambridge" />
+			Cambridge
+		</label>
+		<label>
+			<input type="radio" name="location" value="Everett" />
+			Everett
+		</label>
+		<label>
+			<input type="radio" name="location" value="Medford" />
+			Medford
+		</label>
+		<label>
+			<input type="radio" name="location" value="Somerville" />
+			Somerville
+		</label>
+		<label>
+			<input type="radio" name="location" value="Watertown" />
+			Watertown
+		</label>
+	</form>
+	
 	<section id="projects">Loading...</section>
 	
 	<footer>
 		<hr />
 		<a href="https://docs.google.com/spreadsheets/d/1zMV0RP0p6fp0vWyvE0HEnu0Ai2NfBQVaznDIod8RpUs/view" target="_blank">📄 Tracker spreadsheet</a>
 		&middot;
-		Written by <a href="https://zmyaro.com" target="_blank">Zachary Yaro</a>
+		Created by <a href="https://zmyaro.com" target="_blank">Zachary Yaro</a>
 	</footer>
 </body>
 </html>

@@ -13,43 +13,88 @@ const STATUS_NUMBER_MAP = {
 	'Partially undone': 5,
 	'Undone': 0
 };
+/** @constant {Array<String>} Boston neighborhoods */
+const BOSTON_NEIGHBORHOODS = [
+	'Allston',
+	'Back Bay',
+	'Bay Village',
+	'Beacon Hill',
+	'Brighton',
+	'Charlestown',
+	'Chinatown',
+	'Dorchester',
+	'Downtown',
+	'East Boston',
+	'Fenway-Kenmore',
+	'Hyde Park',
+	'Jamaica Plain',
+	'Mattapan',
+	'Mission Hill',
+	'North End',
+	'Roslindale',
+	'Roxbury',
+	'Seaport',
+	'South Boston',
+	'South End',
+	'West End',
+	'West Roxbury'
+];
 
 /**
- * 
+ * Generate and insert the HTML for the list of projects.
  * @param {Array<Object>} projects
+ * @param {String} locationFilter
  */
-export function renderProjects(projects) {
-	const currentProjectsHTML = projects
+export function renderProjects(projects, locationFilter) {
+	const sortedLocationFilteredProjects =
+		projects.filter((project) => filterLocation(project, locationFilter))
+		.sort((a, b) => a.title < b.title ? -1 : 1);
+	
+	const currentProjectsHTML = sortedLocationFilteredProjects
 			.filter((project) => STATUS_NUMBER_MAP[project.status] >= 0 && STATUS_NUMBER_MAP[project.status] < STATUS_NUMBER_MAP['Complete'])
-			.sort((a, b) => a.title < b.title ? -1 : 1)
 			.map(generateProjectHTML)
 			.join(''),
-		completedProjectsHTML = projects
+		completedProjectsHTML = sortedLocationFilteredProjects
 			.filter((project) => STATUS_NUMBER_MAP[project.status] === STATUS_NUMBER_MAP['Complete'])
-			.sort((a, b) => a.title < b.title ? -1 : 1)
 			.map(generateProjectHTML)
 			.join(''),
-		futureProjectsHTML = projects
+		futureProjectsHTML = sortedLocationFilteredProjects
 			.filter((project) => STATUS_NUMBER_MAP[project.status] < 0)
-			.sort((a, b) => a.title < b.title ? -1 : 1)
 			.map(generateProjectHTML)
 			.join('');
 	
 	document.getElementById('projects').innerHTML = `
 		<hr />
 		<h2>Current Projects</h2>
-		${currentProjectsHTML}
+		${currentProjectsHTML || 'None with current filter'}
 		<hr />
 		<h2>Completed Projects</h2>
-		${completedProjectsHTML}
+		${completedProjectsHTML || 'None with current filter'}
 		<hr />
 		<h2>Future/Desired Projects</h2>
-		${futureProjectsHTML}
+		${futureProjectsHTML || 'None with current filter'}
 	`;
 }
 
 /**
- * 
+ * Check whether a given project is in the specified location.
+ * @param {Object} project
+ * @param {String} location
+ * @returns {Boolean}
+ */
+function filterLocation(project, location) {
+	if (!location) {
+		// Falsey location => show all.
+		return true;
+	}
+	const locationMatch = (location === project.cityOrNeighborhood ||
+		(location === 'Boston' &&
+			BOSTON_NEIGHBORHOODS.includes(project.cityOrNeighborhood)));
+	return locationMatch;
+}
+
+/**
+ * Generate the HTML for a specific project.
  * @param {Object} project
  * @returns {String}
  */
