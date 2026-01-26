@@ -198,12 +198,6 @@ header {
 	}
 }
 
-footer {
-	font-size: smaller;
-	text-align: center;
-	margin-block-start: 1rem;
-}
-
 @keyframes pencil-writing {
 	 95% { transform: translateX(-49%) rotateZ( 0deg); }
 	100% { transform: translateX(-49%) rotateZ( 5deg); }
