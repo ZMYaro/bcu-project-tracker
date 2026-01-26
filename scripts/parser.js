@@ -3,6 +3,7 @@ const COLUMN_FIELD_MAP = {
 	'Title': 'title',
 	'Section': 'section',
 	'Status': 'status',
+	'Construction type': 'constructionType',
 	'Est. Construction Start': 'constructionStartDate',
 	'Est. Completion': 'completionDate',
 	'City/Bos. Neighborhood': 'cityOrNeighborhood',

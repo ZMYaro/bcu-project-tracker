@@ -141,6 +141,8 @@ function generateProjectHTML(project) {
 			<dd>${project.cityOrNeighborhood}</dd>
 			<dt>Owner</dt>
 			<dd>${project.owners.join('; ')}</dd>
+			<dt>Construction Type</dt>
+			<dd>${project.constructionType}</dd>
 			<dt>Designer</dt>
 			<dd>${project.designer}</dd>
 			<dt>Constructor</dt>
