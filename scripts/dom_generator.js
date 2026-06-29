@@ -145,13 +145,13 @@ function generateProjectHTML(project) {
 		<dl>
 			<dt>City/Boston Neighborhood</dt>
 			<dd>${project.cityOrNeighborhood}</dd>
-			<dt>Owner</dt>
+			<dt>Owner<button popovertarget="owner-tooltip">?</button></dt>
 			<dd>${project.owners.join('; ')}</dd>
 			<dt>Construction Type</dt>
 			<dd>${project.constructionType}</dd>
-			<dt>Designer</dt>
+			<dt>Designer<button popovertarget="designer-tooltip">?</button></dt>
 			<dd>${project.designer}</dd>
-			<dt>Constructor</dt>
+			<dt>Constructor<button popovertarget="constructor-tooltip">?</button></dt>
 			<dd>${project.constructor}</dd>
 			<dt>Project Announced</dt>
 			<dd>${project.announceDate}</dd>
@@ -161,7 +161,7 @@ function generateProjectHTML(project) {
 			<dd>${project.constructionStartDate}</dd>
 			<dt>Est. Completion</dt>
 			<dd>${project.completionDate}</dd>
-			<dt>Point(s) Of Contact</dt>
+			<dt>Point(s) Of Contact<button popovertarget="points-of-contact-tooltip">?</button></dt>
 			<dd>${generateContactsHTML(project.contacts)}</dd>
 		</dl>
 	</details>`;

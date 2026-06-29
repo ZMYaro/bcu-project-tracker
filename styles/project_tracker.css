@@ -216,6 +216,18 @@ header {
 	dd {
 		margin-inline-start: 1rem;
 	}
+	button[popovertarget] {
+		display: inline-grid;
+		place-items: center;
+		vertical-align: super;
+		font-size: smaller;
+		
+		background: none;
+		margin: 0;
+		padding: 0;
+		inline-size: 1.25em;
+		block-size: 1.25em;
+	}
 }
 
 @keyframes pencil-writing {
