@@ -219,8 +219,8 @@ header {
 	button[popovertarget] {
 		display: inline-grid;
 		place-items: center;
-		vertical-align: super;
-		font-size: smaller;
+		vertical-align: text-top; /* Close to superscript, but without messing up line spacing. */
+		font-size: 0.7rem;
 		
 		background: none;
 		margin: 0;

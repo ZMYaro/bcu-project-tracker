@@ -143,12 +143,14 @@ function generateProjectHTML(project) {
 			</div>
 		</summary>
 		<dl>
+			<dt>Status</dt>
+			<dd>${project.status}<button popovertarget="${getTooltipName(project.status)}">?</button></dd>
 			<dt>City/Boston Neighborhood</dt>
 			<dd>${project.cityOrNeighborhood}</dd>
 			<dt>Owner<button popovertarget="owner-tooltip">?</button></dt>
 			<dd>${project.owners.join('; ')}</dd>
 			<dt>Construction Type</dt>
-			<dd>${project.constructionType}</dd>
+			<dd>${project.constructionType}<button popovertarget="${getTooltipName(project.constructionType)}">?</button></dd>
 			<dt>Designer<button popovertarget="designer-tooltip">?</button></dt>
 			<dd>${project.designer}</dd>
 			<dt>Constructor<button popovertarget="constructor-tooltip">?</button></dt>
@@ -183,4 +185,15 @@ function generateContactsHTML(contactsStr) {
 			/\((\d{3}-\d{3}-\d{4})\)/g,
 			'(<a href="tel:$1" target="_blank">$1</a>)'
 		);
+}
+
+/**
+ * Get the name of the tooltip for a given label's human-readable name.
+ * Converts to kebab-case, all lowercase, with no non-alphanumeric symbols.
+ * @param {String} humanReadableName - The displayed name of the label
+ * @returns {String} The name of its tooltip
+ */
+function getTooltipName(humanReadableName) {
+	return humanReadableName.toLowerCase().replaceAll(/ +/g, '-').replaceAll(/[^a-z0-9\-]/g, '') +
+		'-tooltip';
 }
